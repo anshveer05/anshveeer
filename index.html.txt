@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crush Proposal</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Styling the container of the content */
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 90%;
+            max-width: 400px;
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 30px;
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+
+        /* Styling the button */
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 25px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        /* Button hover effect */
+        .button:hover {
+            background-color: #ff1493;
+        }
+
+        /* Message after the button click */
+        .response-message {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .positive-response {
+            color: #28a745;
+            font-weight: bold;
+        }
+        
+        /* Responsive design */
+        @media screen and (max-width: 600px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .button {
+                padding: 12px 20px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Do you like me? ??</h1>
+        <button class="button" onclick="answerYes()">Yes</button>
+        <div class="response-message" id="response"></div>
+    </div>
+
+    <script>
+        function answerYes() {
+            // Display the positive response after "Yes" button is clicked
+            const response = document.getElementById('response');
+            response.innerHTML = "<span class='positive-response'>Yay! You said Yes! ?? Let's go on a date!</span>";
+        }
+    </script>
+
+</body>
+</html>
